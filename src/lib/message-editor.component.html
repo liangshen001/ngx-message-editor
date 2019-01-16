@@ -1,0 +1,5 @@
+<div class="textarea-container">
+    <span contenteditable="true" (input)="input($event)" (paste)="paste($event)"
+          (keydown.enter)="$event.ctrlKey ? ctrlEnter() : enter()" class="textarea" #editor>
+    </span>
+</div>
